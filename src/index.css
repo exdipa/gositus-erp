@@ -144,13 +144,21 @@
 }
 
 :root {
-  --sea: #2d75bd;
+  --carnival: #ffce06;
+  --lemon: #fde37f;
+  --sea: #0c9bbd;
   --sky: #89cce6;
-  --forest: #8fcb09;
-  --carnival: #fcc802;
-  --blood: #fa7774;
+  --forest: #2fbdbd;
+  --garden: #c2e96a;
+  --blood: #ea4a6c;
   --rose: #ffbec9;
-  --slight-3: #80868b;
+  --f-priority: #0c9bbd;
+  --u-priority: #ffffff;
+  --primary: var(--sea);
+  --primary-foreground: #ffffff;
+  --ring: var(--sky);
+  --destructive: var(--blood);
+  --slight-3: #666666;
   --slight-9: #bdc1c6;
   --slight-c: #dadce0;
   --slight-d: #e8eaed;
