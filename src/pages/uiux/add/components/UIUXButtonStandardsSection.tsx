@@ -1,5 +1,5 @@
 import { Download, Eye, Plus, Trash2, Upload } from 'lucide-react'
-import WingBox from '@/components/global/WingBox'
+import WingCard from '@/components/global/WingCard'
 import { Button } from '@/components/ui/button'
 
 /**
@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
  */
 function UIUXButtonStandardsSection() {
   return (
-    <WingBox title="Button Standard">
+    <WingCard title="Button Standard">
       <div className="button-standard-grid">
         <Button className="btn-forest">
           <Plus size={16} />
@@ -42,7 +42,7 @@ function UIUXButtonStandardsSection() {
           Small
         </Button>
       </div>
-    </WingBox>
+    </WingCard>
   )
 }
 

@@ -1,6 +1,6 @@
 import { CalendarDays, Hash, Mail, Phone, Tags } from 'lucide-react'
 import Field from '@/components/global/Field'
-import WingBox from '@/components/global/WingBox'
+import WingCard from '@/components/global/WingCard'
 import {
   Select,
   SelectContent,
@@ -19,25 +19,37 @@ import { Textarea } from '@/components/ui/textarea'
  */
 function UIUXInputStandardsSection() {
   return (
-    <WingBox title="Input Standard">
+    <WingCard title="Input Standard">
+      <div className="grid grid-cols-6 gap-2">
+        <div className="col-span-3">
+          <Field label="Text Input">
+            <Input placeholder="Masukkan nama standar" />
+          </Field>
+        </div>
+        <div className="col-span-3">
+          <Field label="Email Input" icon={<Mail size={14} />}>
+            <Input placeholder="name@gosit.us" type="email" />
+          </Field>
+        </div>
+      </div>
+      <div className="grid grid-cols-6 gap-2">
+        <div className="col-span-3">
+          <Field label="Phone Input" icon={<Phone size={14} />}>
+            <div className="phone-field">
+              <span className="phone-region">
+                <span className="phone-flag" /> +62
+              </span>
+              <Input placeholder="812 0000 0000" />
+            </div>
+          </Field>
+        </div>
+        <div className="col-span-3">
+          <Field label="Readonly Input">
+            <Input readOnly value="Readonly value from backend" />
+          </Field>
+        </div>
+      </div>
       <div className="fields">
-        <Field label="Text Input">
-          <Input placeholder="Masukkan nama standar" />
-        </Field>
-        <Field label="Email Input" icon={<Mail size={14} />}>
-          <Input placeholder="name@gosit.us" type="email" />
-        </Field>
-        <Field label="Phone Input" icon={<Phone size={14} />}>
-          <div className="phone-field">
-            <span className="phone-region">
-              <span className="phone-flag" /> +62
-            </span>
-            <Input placeholder="812 0000 0000" />
-          </div>
-        </Field>
-        <Field label="Readonly Input">
-          <Input readOnly value="Readonly value from backend" />
-        </Field>
         <Field label="Disabled Input">
           <Input disabled value="Disabled until permission granted" />
         </Field>
@@ -73,7 +85,7 @@ function UIUXInputStandardsSection() {
           <Textarea className="autogrow-demo" placeholder="Textarea ini disiapkan sebagai target autogrow" />
         </Field>
       </div>
-    </WingBox>
+    </WingCard>
   )
 }
 

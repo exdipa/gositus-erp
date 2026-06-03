@@ -1,7 +1,7 @@
 import { Bell, CheckCircle2, ToggleLeft } from 'lucide-react'
 import Field from '@/components/global/Field'
 import StatusSwitch from '@/components/global/StatusSwitch'
-import WingBox from '@/components/global/WingBox'
+import WingCard from '@/components/global/WingCard'
 import { Button } from '@/components/ui/button'
 
 /**
@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button'
  */
 function UIUXChoiceStandardsSection() {
   return (
-    <WingBox title="Choice Standard">
+    <WingCard title="Choice Standard">
       <div className="fields">
         <Field label="Radio Group">
           <div className="choice-grid">
@@ -74,7 +74,7 @@ function UIUXChoiceStandardsSection() {
           </div>
         </Field>
       </div>
-    </WingBox>
+    </WingCard>
   )
 }
 
